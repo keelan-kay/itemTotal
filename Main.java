@@ -1,5 +1,7 @@
 class Main {
-    
+
+double budget = 230.00;
+ 
 public static double overallSum(double[]valueSum) { 
 
 double sum = 0; 
@@ -13,8 +15,8 @@ return sum;
 public static double amountLeft(double total) {
 
 double left = 0;
-if (total < 230.00) {
-    left = left + (230.00 - total);
+if (total < budget) {
+    left = left + (budget - total);
 }
 return left;
     }
@@ -22,8 +24,8 @@ return left;
 public static double overBudget(double total) {
 
 double over = 0;
-if(total > 230.00) {
-over = over + (total - 230.00);
+if(total > budget) {
+over = over + (total - budget);
     }
 return over;
     }
